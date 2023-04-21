@@ -7,11 +7,8 @@ int main()
 
     struct BankUser user;
 
-    char CardID[512];
-    char p[512];
-
-    int value;
-    int rc;
+    char CardID[512], p[512];
+    int value, rc;
 
     for (;;)
     {
@@ -59,9 +56,7 @@ int main()
                 clearPrint(p);
             }
             else if (choose == 2)
-            {
                 clearPrint(accountInfo(&user));
-            }
             else if (choose == 3)
             {
                 fprintf(stderr, "Enter Value: ");
@@ -89,9 +84,7 @@ int main()
                 break;
             }
             else
-            {
                 clearPrint("Choose Not Valid!\n");
-            }
         }
     }
 
