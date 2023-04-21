@@ -6,12 +6,16 @@ Very Simple ATM command line!
 
 you need linuxOS for run this project!  
 you can run this project in windows but you need wsl or tdm-gcc!
+> make ATM
 
-> make
-
-and run atm file !
-
+and run atm file:
 > ./atm
+
+for run test:
+> make tests
+
+and run:
+> ./atm_test
 
 Thanks For [SHA-256](https://github.com/983/SHA-256) lib SHA256 to string !
 
