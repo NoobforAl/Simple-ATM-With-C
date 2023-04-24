@@ -180,8 +180,10 @@ int handelError(int code)
         clearPrint("You Can't Send Money for your self!");
         return code;
 
-    case NOT_VALID_CARD_ID || NO_INPUT || TOO_LONG:
-        clearPrint("Pleas Enter Valid CardId!");
+    case NO_INPUT:
+    case TOO_LONG:
+    case NOT_VALID_CARD_ID:
+        clearPrint("Pleas Enter Valid Input!");
         return code;
 
     default:
