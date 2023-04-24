@@ -17,6 +17,10 @@ for run test:
 and run:
 > ./atm_test
 
+if get error for not found path include atm ot sha256 inter this command:
+
+> git submodule update --init --recursive
+
 Thanks For [SHA-256](https://github.com/983/SHA-256) lib SHA256 to string !
 
 ## User Table
