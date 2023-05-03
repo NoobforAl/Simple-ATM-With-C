@@ -1,6 +1,6 @@
 #include "ATM/atm.h"
 
-int main()
+int main(void)
 {
     if (initDB())
         return 1;

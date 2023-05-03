@@ -38,13 +38,13 @@ struct BankUser
 #define FEE 2500
 
 //* init database for first time run program
-int initDB();
+int initDB(void);
 
 //* Close Database
 void closeDB(void);
 
 //* insert temp data in database if database is empty!
-int insertData();
+int insertData(void);
 
 /*
  * setup login user

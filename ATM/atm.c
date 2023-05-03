@@ -2,7 +2,7 @@
 
 sqlite3 *db;
 
-int initDB()
+int initDB(void)
 {
     fprintf(stderr, "Create or Open Database File!\n");
     if (sqlite3_open("./user.db", &db) != SQLITE_OK)
@@ -33,7 +33,7 @@ void closeDB(void)
     sqlite3_close(db);
 }
 
-int insertData()
+int insertData(void)
 {
     char *err_msg = 0;
     char *sql = "DROP TABLE IF EXISTS User;"
