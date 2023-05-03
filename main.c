@@ -21,8 +21,6 @@ int main()
             break;
 
         char *password = getpass("Password: ");
-        if (handelError(strlen(password) > 33 ? NOT_VALID_CARD_ID : OK))
-            continue;
 
         rc = makeLoginUser(&user, CardID, password);
         if (handelError(rc))
